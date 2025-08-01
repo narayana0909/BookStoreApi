@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
@@ -15,10 +15,6 @@
   "start": "dotnet out/BookStoreApi.dll"
 }
 
-  <ItemGroup>
-    <Reference Include="MySqlDBOperations">
-      <HintPath>..\..\..\..\..\Downloads\MySqlDBOperations.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+ 
 
 </Project>
