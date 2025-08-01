@@ -11,13 +11,4 @@
     <PackageReference Include="MySql.Data" Version="9.4.0" />
   </ItemGroup>
 
-
-
-{
-  "build": "dotnet publish -c Release -o out",
-  "start": "dotnet out/BookStoreApi.dll"
-}
-
- 
-
 </Project>
