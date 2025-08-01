@@ -20,6 +20,18 @@ namespace BookStoreApi
             {
                 app.MapOpenApi();
             }
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
+
+            var app = builder.Build();
+
+            if (app.Environment.IsDevelopment())
+           {
+                 app.UseSwagger();
+                 app.UseSwaggerUI();
+           }
+
+            app.Run();
 
             app.UseHttpsRedirection();
 
